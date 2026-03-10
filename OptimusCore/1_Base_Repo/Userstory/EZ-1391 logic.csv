@@ -1,0 +1,6 @@
+﻿,Logic - AdditionalInsured,
+,Tab,Information
+,IPS,ezDocs
+,Company,Additional Named Insured
+Scenario 1,empty,empty
+Scenario 2,List of Names,Show the names one by one

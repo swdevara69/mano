@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#EZ-1391] QA - IPSIntegration - Validate Received Liability Information Screen - Logic - AdditionalInsured</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://jira-zurichna.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [EZ-1391]&nbsp;<a href="https://jira-zurichna.atlassian.net/browse/EZ-1391">QA - IPSIntegration - Validate Received Liability Information Screen - Logic - AdditionalInsured</a>
+            <span class="subText">
+               Created: 02/10/26                   &nbsp;Updated: 03/09/26
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Closed</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://jira-zurichna.atlassian.net/secure/BrowseProject.jspa?id=12183">eZdocs</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                                        <a title="eZdocs/IPS Integration"
+                href="https://jira-zurichna.atlassian.net/issues/?jql=project%3D12183%20AND%20%22fixVersion%22%3D15742%20ORDER%20BY%20priority%20ASC"
+            >eZdocs/IPS Integration</a>                        </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                TBD
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:63e6064d-2dd2-4c88-824e-6528ca9c3527"
+                id="word_reporter_712020:63e6064d-2dd2-4c88-824e-6528ca9c3527"
+                href="https://jira-zurichna.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A63e6064d-2dd2-4c88-824e-6528ca9c3527">
+                    Sujitha Sujitha (Contractor)
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:72cac5f0-0f85-493b-8c01-ff0a1c62a2fb"
+                id="word_assignee_712020:72cac5f0-0f85-493b-8c01-ff0a1c62a2fb"
+                href="https://jira-zurichna.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A72cac5f0-0f85-493b-8c01-ff0a1c62a2fb">
+                    swetha devarapalli
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-13418833-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            IPS, QA                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://jira-zurichna.atlassian.net/images/icons/attach/word.gif" height="16" width="16" border="0" alt="Microsoft Word">
+                    EZ-1391-AdditionalInsured.docx &nbsp;&nbsp;&nbsp;
+                                    <img src="https://jira-zurichna.atlassian.net/images/icons/attach/file.gif" height="16" width="16" border="0" alt="File">
+                    AdditionalInsured-EZ-1391neww.csv &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Cloners</b><br/>
+                            </td>
+                        </tr>
+                                    <tr>
+            <td>
+                clones
+            </td>
+            <td>
+                <a href="https://jira-zurichna.atlassian.net/browse/EZ-1231">
+                     EZ-1231                 </a>
+            </td>
+            <td>
+                Map IPS data with Liability Received ...
+            </td>
+            <td>
+                Closed
+            </td>
+        </tr>
+                                                                    </table>
+            </td>
+        </tr>
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-13418833-value" class="value" bgcolor="#ffffff" width="80%">IPS/eZdocs Sprint 8</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Mendix PD&#39;s:</b></td>
+                <td id="customfield_12229-13418833-value" class="value" bgcolor="#ffffff" width="80%">    3
+</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>The QA team will perform functional, UI, and validation checks on the Liability Information screen. <br/>
+All fields, controls, and behaviors must match the specifications outlined in the provided requirements table. Any deviations, defects, or usability issues must be documented.</p>
+
+<p><b>Verify the Action Values Scenarios in the Logic tab from the below Excel sheet</b><br/>
+<a href="https://zurichinsurancecan.sharepoint.com/:x:/r/sites/FMZTCSpreSOWspace/Shared%20Documents/General/IPS_CIIM_ezDocs%20Integration/IPS%20Integration%20-%20Master%20Sheets/Received%20Liability%20Master.xlsx?d=wde7fd63e6c4d446481a48860e88c373e&amp;csf=1&amp;web=1&amp;e=RTJxAx" class="external-link" rel="nofollow noreferrer"><ins>Received Liability Master.xlsx</ins></a></p>
+
+<div class='table-wrap'>
+<table class='confluenceTable'><tbody>
+<tr>
+<td class='confluenceTd'><b>S. NO.</b></td>
+<td class='confluenceTd'><b>PAGE</b></td>
+<td class='confluenceTd'><b>TAB</b></td>
+<td class='confluenceTd'><b>SECTION</b></td>
+<td class='confluenceTd'><b>FIELD NAME</b></td>
+<td class='confluenceTd'><b>ACTION</b></td>
+<td class='confluenceTd'><b>ACTUAL VALUE</b></td>
+</tr>
+<tr>
+<td class='confluenceTd'>&nbsp;</td>
+<td class='confluenceTd'>LiabilityCoverage</td>
+<td class='confluenceTd'>Information</td>
+<td class='confluenceTd'>Additional Named Insured</td>
+<td class='confluenceTd'>Additional Named Insured</td>
+<td class='confluenceTd'>IPS Check</td>
+<td class='confluenceTd'>Logic - AdditionalInsured</td>
+</tr>
+</tbody></table>
+</div>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-1619363"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:72cac5f0-0f85-493b-8c01-ff0a1c62a2fb"
+                id="word_commented_712020:72cac5f0-0f85-493b-8c01-ff0a1c62a2fb"
+                href="https://jira-zurichna.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A72cac5f0-0f85-493b-8c01-ff0a1c62a2fb">
+                    swetha devarapalli
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">03/09/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-1619363"><td bgcolor="#ffffff">
+            <p>I have completed testing the QA - IPSIntegration - Validate Received Liability Information Screen - Logic - AdditionalInsured. All fields are functioning as expected.</p>
+
+<p>Therefore, I am proceeding to close the story.</p>
+
+<p>Please refer to the attached documents for reference.</p>
+
+<p><a href="https://jira-zurichna.atlassian.net/secure/ViewProfile.jspa?accountId=627d6a456ba8640069cf7c7d" class="user-hover" rel="627d6a456ba8640069cf7c7d" data-account-id="627d6a456ba8640069cf7c7d" accountid="627d6a456ba8640069cf7c7d" rel="noreferrer">Michelle D'Souza</a>  <a href="https://jira-zurichna.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A63e6064d-2dd2-4c88-824e-6528ca9c3527" class="user-hover" rel="712020:63e6064d-2dd2-4c88-824e-6528ca9c3527" data-account-id="712020:63e6064d-2dd2-4c88-824e-6528ca9c3527" accountid="712020:63e6064d-2dd2-4c88-824e-6528ca9c3527" rel="noreferrer">Sujitha Sujitha (Contractor)</a> <a href="https://jira-zurichna.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Af2cf9e9c-155b-46ad-8c54-91e544bd3e4c" class="user-hover" rel="712020:f2cf9e9c-155b-46ad-8c54-91e544bd3e4c" data-account-id="712020:f2cf9e9c-155b-46ad-8c54-91e544bd3e4c" accountid="712020:f2cf9e9c-155b-46ad-8c54-91e544bd3e4c" rel="noreferrer">Vinoth Ravi</a><a href="https://jira-zurichna.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A77309353-68ce-47f9-bf47-8c6de56830cc" class="user-hover" rel="712020:77309353-68ce-47f9-bf47-8c6de56830cc" data-account-id="712020:77309353-68ce-47f9-bf47-8c6de56830cc" accountid="712020:77309353-68ce-47f9-bf47-8c6de56830cc" rel="noreferrer">Mothkuri Divya</a> <a href="https://jira-zurichna.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4afccbe3-8891-46b5-88a7-f3d5a56d7e46" class="user-hover" rel="712020:4afccbe3-8891-46b5-88a7-f3d5a56d7e46" data-account-id="712020:4afccbe3-8891-46b5-88a7-f3d5a56d7e46" accountid="712020:4afccbe3-8891-46b5-88a7-f3d5a56d7e46" rel="noreferrer">Nirmal Vaskale (Contractor)</a> <a href="https://jira-zurichna.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A420e0c63-effd-4a01-bd1b-0740326c70f6" class="user-hover" rel="712020:420e0c63-effd-4a01-bd1b-0740326c70f6" data-account-id="712020:420e0c63-effd-4a01-bd1b-0740326c70f6" accountid="712020:420e0c63-effd-4a01-bd1b-0740326c70f6" rel="noreferrer">Yogesh Mudaliar</a></p>
+        </td></tr>
+            </table>
+Generated at Tue Mar 10 12:19:20 UTC 2026 by swetha devarapalli using Jira 1001.0.0-SNAPSHOT#100290-rev:e5f99095610c798feb22fa87f63a2b58eb962edb.
+
+</body>
+</html>
